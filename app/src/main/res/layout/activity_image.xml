@@ -1,0 +1,61 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="#0099cc"
+    tools:context=".activities.ImageActivity">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+    <com.example.iitbhustudentsapp.ui.TouchImageView
+        android:id="@+id/fullscreen_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:keepScreenOn="true"
+        android:gravity="center"
+        android:background="#000000"
+        />
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout android:id="@+id/fullscreen_content_controls" style="?buttonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@color/black"
+            android:orientation="vertical"
+            android:padding="8dp"
+            tools:ignore="UselessParent">
+            <TextView
+                android:id="@+id/image_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Title"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/white"/>
+            <TextView
+                android:id="@+id/image_subtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Title"
+                android:autoLink="all"
+                android:textSize="12dp"
+                android:textColor="@color/white"/>
+            <TextView
+                android:id="@+id/image_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="sample"
+                android:textSize="10dp"
+                android:maxLines="5"
+                android:autoLink="all"
+                android:ellipsize="end"/>
+
+
+        </LinearLayout>
+    </FrameLayout>
+
+</FrameLayout>

@@ -1,0 +1,114 @@
+<resources>
+    <string name="app_name">IIT BHU Students App</string>
+    <string name="title_news">News</string>
+    <string name="title_favorites">Favorites</string>
+    <string name="title_calendar">Calendar</string>
+    <string name="title_timetable">Time Table</string>
+    <string name="title_me">Me</string>
+    <string name="title_activity_login">Sign in</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_stream_subscribe">Subscriptions</string>
+
+    <string-array name="cultural_council">
+        <item>Dance Freakz</item>
+        <item>Indian Music Club</item>
+        <item>Western Music Club</item>
+        <item>Masquerades</item>
+        <item>The Quiz Club</item>
+        <item>Fine Arts Club</item>
+        <item>The Lit Club</item>
+    </string-array>
+    <string-array name="science_and_technology_council">
+        <item>Robotics Club</item>
+        <item>Aero modelling Club</item>
+        <item>SAC Club</item>
+        <item>Clubs of Programmers</item>
+        <item>Astronomy Club</item>
+        <item>Club</item>
+        <item>Club</item>
+    </string-array>
+    <string-array name="film_and_media_council">
+        <item>Photography Club</item>
+        <item>Animation Club</item>
+        <item>Cine Club</item>
+        <item>Media Club</item>
+        <item>Club</item>
+        <item>Club</item>
+    </string-array>
+    <string-array name="games_and_sports_council">
+        <item>Club</item>
+        <item>Club</item>
+        <item>Club</item>
+        <item>Club</item>
+        <item>Club</item>
+        <item>Club</item>
+        <item>Club</item>
+        <item>Club</item>
+        <item>Club</item>
+        <item>Club</item>
+        <item>Club</item>
+        <item>Club</item>
+        <item>Club</item>
+        <item>Club</item>
+    </string-array>
+    <string-array name="social_service_council">
+        <item>Club</item>
+        <item>Club</item>
+        <item>Club</item>
+        <item>Club</item>
+        <item>Club</item>
+    </string-array>
+
+    <string name="instruction_news_title">NEWS</string>
+    <string name="instruction_events_title">EVENTS</string>
+    <string name="instruction_stream_title">STREAMS</string>
+    <string name="instruction_news_subtitle">instruction</string>
+    <string name="instruction_events_subtitle">instruction</string>
+    <string name="instruction_stream_subtitle">instruction</string>
+    <string name="notification_instruction">Get news from all around the campus. No more annoying mass mails.\nFor suggesting us the news you
+        want please click the button at the bottom.
+        \n\nStay Updated!"</string>
+    <string name="events_instruction">Get details of events from your subscribed streams. Don\'t miss any of your
+        favorite one. All the details from schedule to venue and authors are readily available only for you.
+        Click on any of the event cards to get more insights of events. For suggesting us the events you want
+        please click the button at the bottom.\nSubscribe streams now.</string>
+    <string name="stream_instruction">Get your favorite streams here. Subscribe the one you like and start getting
+        all the feeds from it. All the news and events from subscribed streams are instantly notified to you.
+        Click on any of the stream cards to get more details of streams. For suggesting us the streams you want
+        please click the button at the bottom.\nSubscribe one now.</string>
+
+    <!--Snackbar Text-->
+    <string name="snackbar_action_settings">SETTINGS</string>
+    <string name="snackbar_feedback_empty">Please write some feedback !</string>
+    <string name="snackbar_feedback_success">Thanks for your feedback</string>
+    <string name="snackbar_error">Error, please try again.</string>
+    <string name="snackbar_cannot_reach_servers">Cannot Reach Servers</string>
+    <string name="snackbar_no_content_found">No content found!</string>
+    <string name="snackbar_thankyou_for_post">Thanks. Your post has been shared</string>
+    <string name="snackbar_specify_title_content_for_post">Please specify both Title and Content</string>
+    <string name="snackbar_error_fetching_notifications">Some Error in fetching notifications.</string>
+    <string name="snackbar_error_fetching_streams">Some Error in fetching streams.</string>
+    <string name="title_activity_sample">SampleActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+
+</resources>
