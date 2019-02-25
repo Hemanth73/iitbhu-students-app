@@ -1,31 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item
-        android:id="@+id/nav_home"
-        android:icon="@drawable/ic_home_black_24dp"
-        android:title="Home" />
-    <item
-        android:id="@+id/nav_mess_menu"
-        android:icon="@drawable/ic_restaurant_menu_white_24dp"
-        android:title="Mess Menu" />
-    <item
-        android:id="@+id/nav_complaint_box"
-        android:icon="@drawable/ic_complaint_24dp"
-        android:title="Complaint box" />
-    <item
-        android:id="@+id/nav_important_contacts"
-        android:icon="@drawable/ic_contacts_24dp"
-        android:title="Important Contacts" />
-    <item android:title="More">
-        <menu>
-            <item
-                android:id="@+id/nav_log_out"
-                android:icon="@drawable/ic_logout_24dp"
-                android:title="Log Out" />
-            <item
-                android:id="@+id/nav_about"
-                android:icon="@drawable/ic_info_24dp"
-                android:title="About Us" />
-        </menu>
-    </item>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_mess_menu"
+            android:icon="@drawable/ic_restaurant_menu_white_24dp"
+            android:title="Mess Menu" />
+        <item
+            android:id="@+id/nav_complaint_box"
+            android:icon="@drawable/ic_complaint_24dp"
+            android:title="Complaint box" />
+        <item
+            android:id="@+id/nav_important_contacts"
+            android:icon="@drawable/ic_contacts_24dp"
+            android:title="Important Contacts" />
+        <item android:title="More">
+            <menu>
+                <item
+                    android:id="@+id/nav_log_out"
+                    android:icon="@drawable/ic_logout_24dp"
+                    android:title="Log Out" />
+                <item
+                    android:id="@+id/nav_about"
+                    android:icon="@drawable/ic_info_24dp"
+                    android:title="About Us" />
+            </menu>
+        </item>
+    </group>
 </menu>

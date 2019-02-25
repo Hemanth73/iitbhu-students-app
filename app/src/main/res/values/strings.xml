@@ -2,7 +2,7 @@
     <string name="app_name">IIT BHU Students App</string>
     <string name="title_news">News</string>
     <string name="title_favorites">Favorites</string>
-    <string name="title_calendar">Calendar</string>
+    <string name="title_events">Events</string>
     <string name="title_timetable">Time Table</string>
     <string name="title_me">Me</string>
     <string name="title_activity_login">Sign in</string>
@@ -23,55 +23,19 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_stream_subscribe">Subscriptions</string>
 
-    <string-array name="cultural_council">
-        <item>Dance Freakz</item>
-        <item>Indian Music Club</item>
-        <item>Western Music Club</item>
-        <item>Masquerades</item>
-        <item>The Quiz Club</item>
-        <item>Fine Arts Club</item>
-        <item>The Lit Club</item>
-    </string-array>
-    <string-array name="science_and_technology_council">
-        <item>Robotics Club</item>
-        <item>Aero modelling Club</item>
-        <item>SAC Club</item>
-        <item>Clubs of Programmers</item>
-        <item>Astronomy Club</item>
-        <item>Club</item>
-        <item>Club</item>
-    </string-array>
-    <string-array name="film_and_media_council">
-        <item>Photography Club</item>
-        <item>Animation Club</item>
-        <item>Cine Club</item>
-        <item>Media Club</item>
-        <item>Club</item>
-        <item>Club</item>
-    </string-array>
-    <string-array name="games_and_sports_council">
-        <item>Club</item>
-        <item>Club</item>
-        <item>Club</item>
-        <item>Club</item>
-        <item>Club</item>
-        <item>Club</item>
-        <item>Club</item>
-        <item>Club</item>
-        <item>Club</item>
-        <item>Club</item>
-        <item>Club</item>
-        <item>Club</item>
-        <item>Club</item>
-        <item>Club</item>
-    </string-array>
-    <string-array name="social_service_council">
-        <item>Club</item>
-        <item>Club</item>
-        <item>Club</item>
-        <item>Club</item>
-        <item>Club</item>
-    </string-array>
+    <array name="subscription_groups">
+        <item>Academics</item>
+        <item>Cultural Council</item>
+        <item>E-cell</item>
+        <item>Film and Media Council</item>
+        <item>Games and Sports Council</item>
+        <item>International Relations Office</item>
+        <item>Press and Public Relations</item>
+        <item>Science and Technology Council</item>
+        <item>Social Service Council</item>
+        <item>Student Alumni Interaction Cell</item>
+        <item>Students\' Parliament</item>
+    </array>
 
     <string name="instruction_news_title">NEWS</string>
     <string name="instruction_events_title">EVENTS</string>

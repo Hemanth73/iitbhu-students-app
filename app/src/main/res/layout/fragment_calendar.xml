@@ -1,5 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.marcohc.robotocalendar.RobotoCalendarView android:id="@+id/robotoCalendarPicker"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    xmlns:android="http://schemas.android.com/apk/res/android" />
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/date_picker_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@android:color/transparent"
+        android:drawableEnd="@drawable/ic_edit_24dp"
+        android:drawableTint="@color/black"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/events_listview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/date_picker_button" />
+</android.support.constraint.ConstraintLayout>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ExpandableListView android:layout_height="match_parent"
-    android:id="@+id/council_list_view"
+<ListView android:id="@+id/subscriptions_list_view"
+    android:layout_height="match_parent"
     android:layout_width="match_parent"
     android:indicatorRight="?android:attr/expandableListPreferredItemIndicatorRight"
     android:divider="@android:color/darker_gray"

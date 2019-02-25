@@ -1,28 +1,18 @@
 package com.example.iitbhustudentsapp.activities;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.ExpandableListAdapter;
-import android.widget.ExpandableListView;
-import android.widget.Toast;
+import android.support.v7.app.AppCompatActivity;
+import android.widget.ListView;
 
 import com.example.iitbhustudentsapp.R;
-import com.example.iitbhustudentsapp.adapters.CouncilListAdapter;
-import com.example.iitbhustudentsapp.adapters.CouncilListDataPump;
+import com.example.iitbhustudentsapp.adapters.SubscriptionGroupsAdapter;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.List;
+import java.util.Arrays;
 
 public class SubscriptionActivity extends AppCompatActivity {
 
-    ExpandableListView expandableListView;
-    ExpandableListAdapter expandableListAdapter;
-    List<String> expandableListTitle;
-    HashMap<String, List<String>> expandableListDetail;
+    ListView subscriptionsListView;
+    String[] subscriptionItemNames;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,50 +20,12 @@ public class SubscriptionActivity extends AppCompatActivity {
         setContentView(R.layout.activity_subscription);
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        subscriptionItemNames = getResources().getStringArray(R.array.subscription_groups);
+        Arrays.sort(subscriptionItemNames);
 
-        expandableListView = (ExpandableListView) findViewById(R.id.council_list_view);
-        expandableListDetail = CouncilListDataPump.getData(this);
-        expandableListTitle = new ArrayList<String>(expandableListDetail.keySet());
-        Collections.sort(expandableListTitle);
-        expandableListAdapter = new CouncilListAdapter(this, expandableListTitle, expandableListDetail);
-        expandableListView.setAdapter(expandableListAdapter);
-        expandableListView.setOnGroupExpandListener(new ExpandableListView.OnGroupExpandListener() {
-
-            @Override
-            public void onGroupExpand(int groupPosition) {
-//                Toast.makeText(getApplicationContext(),
-//                        expandableListTitle.get(groupPosition) + " List Expanded.",
-//                        Toast.LENGTH_SHORT).show();
-            }
-        });
-
-        expandableListView.setOnGroupCollapseListener(new ExpandableListView.OnGroupCollapseListener() {
-
-            @Override
-            public void onGroupCollapse(int groupPosition) {
-//                Toast.makeText(getApplicationContext(),
-//                        expandableListTitle.get(groupPosition) + " List Collapsed.",
-//                        Toast.LENGTH_SHORT).show();
-
-            }
-        });
-
-        expandableListView.setOnChildClickListener(new ExpandableListView.OnChildClickListener() {
-            @Override
-            public boolean onChildClick(ExpandableListView parent, View v,
-                                        int groupPosition, int childPosition, long id) {
-                Toast.makeText(
-                        getApplicationContext(),
-                        expandableListTitle.get(groupPosition)
-                                + " -> "
-                                + expandableListDetail.get(
-                                expandableListTitle.get(groupPosition)).get(
-                                childPosition), Toast.LENGTH_SHORT
-                ).show();
-                return false;
-            }
-        });
-
+        subscriptionsListView = findViewById(R.id.subscriptions_list_view);
+        SubscriptionGroupsAdapter mAdapter = new SubscriptionGroupsAdapter(this, subscriptionItemNames);
+        subscriptionsListView.setAdapter(mAdapter);
     }
 
 }

@@ -7,14 +7,9 @@
         android:title="@string/title_news" />
 
     <item
-        android:id="@+id/navigation_calendar"
+        android:id="@+id/navigation_events"
         android:icon="@drawable/ic_calendar_black_24dp"
-        android:title="@string/title_calendar" />
-
-    <item
-        android:id="@+id/navigation_timetable"
-        android:icon="@drawable/ic_alarm_white_24dp"
-        android:title="@string/title_timetable" />
+        android:title="@string/title_events" />
 
     <item
         android:id="@+id/navigation_me"
